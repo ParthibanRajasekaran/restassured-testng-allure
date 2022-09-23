@@ -19,11 +19,13 @@ public class PropertyFileReaderUtils {
 
   private static Properties prop;
   private static String propValue;
-  
+
   @Step("Get test data from properties file")
   private static String getConfigTestDataFile() throws ConfigurationException {
     String environment = System.getProperty("envConfig");
-    if (environment == null || environment.equals("")) environment = "default";
+    if (environment == null || environment.equals("")) {
+      environment = "default";
+    }
     log.info("Tests are run on " + environment + " testData");
     return Constants.getDataPath()
         + File.separatorChar

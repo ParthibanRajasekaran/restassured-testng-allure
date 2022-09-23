@@ -22,8 +22,11 @@ import org.json.JSONObject;
 @Slf4j
 public class RestAssuredUtils {
 
-  /** Class is not to be instantiated. private constructor to hide the implicit public one. */
-  private RestAssuredUtils() {}
+  /**
+   * Class is not to be instantiated. private constructor to hide the implicit public one.
+   */
+  private RestAssuredUtils() {
+  }
 
   /**
    * This method is to convert the content in Response format to JsonPath.
@@ -43,7 +46,7 @@ public class RestAssuredUtils {
   /**
    * This method is to build the Payload in JSON.
    *
-   * @param obj A not null Object which is to be converted to json
+   * @param obj    A not null Object which is to be converted to json
    * @param pretty true causes formatting, if false there will be no attempt to format.
    * @return never null
    * @throws JsonProcessingException Most error cases
@@ -110,7 +113,7 @@ public class RestAssuredUtils {
   /**
    * Verify the http status code of the response received.
    *
-   * @param rawRes A response which should have its response code checked
+   * @param rawRes             A response which should have its response code checked
    * @param expectedStatusCode THe expected response, for example 200
    */
   public static void verifyStatusCode(Response rawRes, int expectedStatusCode) {
@@ -123,10 +126,10 @@ public class RestAssuredUtils {
   /**
    * Generate bearer token from tokenUri, client id and client secret For oauth2.
    *
-   * @param tokenUri The (valid) url from which the token should be obtained, the Endpoint.
-   * @param clientId The username (to be used with http basic authentication)
+   * @param tokenUri     The (valid) url from which the token should be obtained, the Endpoint.
+   * @param clientId     The username (to be used with http basic authentication)
    * @param clientSecret THe password corresponding to {@code clientId}
-   * @param scope See {@link https://oauth.net/2/scope/}
+   * @param scope        See {@link https://oauth.net/2/scope/}
    */
   public static String getAuthTokenWithClientIdAndSecret(
       String tokenUri, String clientId, String clientSecret, String scope) {
@@ -152,12 +155,12 @@ public class RestAssuredUtils {
    * This method is to generate bearer token from tokenUri, client id, client secret and resource
    * owner credentials For oauth2.
    *
-   * @param tokenUri The (valid) url from which the token should be obtained, the Endpoint.
-   * @param clientId The username (to be used with http basic authentication)
+   * @param tokenUri     The (valid) url from which the token should be obtained, the Endpoint.
+   * @param clientId     The username (to be used with http basic authentication)
    * @param clientSecret THe password corresponding to {@code clientId}
-   * @param username Used for authentcation
-   * @param password Used for authentcation
-   * @param scope See {@link https://oauth.net/2/scope/}
+   * @param username     Used for authentcation
+   * @param password     Used for authentcation
+   * @param scope        See {@link https://oauth.net/2/scope/}
    */
   public static String getAuthTokenWithResourceOwnerLogin(
       final String tokenUri,

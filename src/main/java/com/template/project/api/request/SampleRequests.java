@@ -8,6 +8,7 @@ import static io.restassured.RestAssured.given;
 import com.template.project.api.resource.SampleResource;
 import com.template.project.common.Logger;
 import io.qameta.allure.Step;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import java.io.IOException;
@@ -28,6 +29,7 @@ public class SampleRequests {
 
     Response rawRes =
         given()
+            .filter(new AllureRestAssured())
             .baseUri(host)
             .basePath(resourcePath)
             .body(requestBody)
@@ -58,6 +60,7 @@ public class SampleRequests {
 
     Response rawRes =
         given()
+            .filter(new AllureRestAssured())
             .baseUri(host)
             .basePath(resourcePath)
             .contentType(ContentType.JSON)
@@ -89,6 +92,7 @@ public class SampleRequests {
 
     Response rawRes =
         given()
+            .filter(new AllureRestAssured())
             .baseUri(host)
             .basePath(resourcePath)
             .body(requestBody)
@@ -117,6 +121,7 @@ public class SampleRequests {
 
     Response rawRes =
         given()
+            .filter(new AllureRestAssured())
             .baseUri(host)
             .basePath(resourcePath)
             .contentType(ContentType.JSON)

@@ -21,8 +21,10 @@ public class SampleTest {
     Response rawRes = SampleRequests.createCustomer("customerFirstName", "customerLastName");
     verifyStatusCode(rawRes, 201);
     CustomFunctions.verifyCustomerIdNotNull(rawRes);
-    Assert.assertEquals(CustomFunctions.getCustomerFirstname(rawRes), "customerFirstName", "Invalid First name");
-    Assert.assertEquals(CustomFunctions.getCustomerLastname(rawRes), "customerLastName", "Invalid Last name");
+    Assert.assertEquals(CustomFunctions.getCustomerFirstname(rawRes), "customerFirstName",
+        "Invalid First name");
+    Assert.assertEquals(CustomFunctions.getCustomerLastname(rawRes), "customerLastName",
+        "Invalid Last name");
   }
 
   @Test
@@ -57,8 +59,10 @@ public class SampleTest {
 
     rawRes = SampleRequests.getCustomerDetails(customerId);
     verifyStatusCode(rawRes, 200);
-    Assert.assertEquals(CustomFunctions.getCustomerFirstname(rawRes), "updatedCustomerFirstName", "Invalid First name");
-    Assert.assertEquals(CustomFunctions.getCustomerLastname(rawRes), "updatedCustomerLastName", "Invalid Last name");
+    Assert.assertEquals(CustomFunctions.getCustomerFirstname(rawRes), "updatedCustomerFirstName",
+        "Invalid First name");
+    Assert.assertEquals(CustomFunctions.getCustomerLastname(rawRes), "updatedCustomerLastName",
+        "Invalid Last name");
 
     logInfo("Customer details are retrieved successfully");
   }

@@ -5,10 +5,11 @@ import com.template.project.api.model.SampleModel;
 import com.template.project.common.RestAssuredUtils;
 
 public class SampleBuilder {
+
   public static String getJsonPayload(SampleModel sampleModel) throws JsonProcessingException {
     final String jsonPayload = RestAssuredUtils.serializeToJson(sampleModel, true);
     System.out.println(jsonPayload);
-    
+
     return jsonPayload;
   }
 

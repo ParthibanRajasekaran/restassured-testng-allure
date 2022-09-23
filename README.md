@@ -1,4 +1,4 @@
-### Hi there, I'm Parthiban Rajasekaran 👋 
+### Hi there, I'm Parthiban Rajasekaran 👋
 
   <p align="left">
     <a href="https://github.com/ParthibanRajasekaran/restassured-gherkin-testng-allure/actions">
@@ -8,11 +8,13 @@
   </p>
 
 ### Connect with me
+
 [<img align="middle" alt="Parthiban Rajasekaran | LinkedIn" width="115px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />][linkedin]
 
 <br />
 
 ### Prerequisites
+
 <table> 
 <tr>
 <td>
@@ -53,8 +55,6 @@ Community edition
 [<img align="middle" alt="Maven" width="25px" src="https://604223-1956433-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/10/allure-logo-150x150.png" />][allure-report]
 <br />
 
-
-
 ### Getting Started: ⚡
 
 - Clone the project <br />
@@ -66,11 +66,13 @@ Community edition
 ---
 
 ### Familiarize myself with the framework
+
 <p align="left">
   <a href="/docs/onboarding.md">Try it out!</a>
 <p>
 
 ### FAQ:
+
 <p align="left">
   <a href="/docs/configure-settings.md">1. How can I configure settings.xml for Maven downloads?</a>
 <p>
@@ -92,11 +94,19 @@ Community edition
 
 
 [linkedin]: https://www.linkedin.com/in/parthiban-rajasekaran/
+
 [java]: https://adoptopenjdk.net/
+
 [maven]: https://maven.apache.org/download.cgi
+
 [intelliJ]: https://www.jetbrains.com/idea/download/
+
 [git]: https://git-scm.com/
+
 [github]: https://github.com/
+
 [testng]: https://testng.org/doc/documentation-main.html
+
 [allure-report]: https://docs.qameta.io/allure/
+
 [rest-assured]: https://rest-assured.io/

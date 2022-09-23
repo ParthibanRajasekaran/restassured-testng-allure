@@ -6,6 +6,6 @@ public class SampleDataProvider {
 
   @DataProvider(name = "testData")
   public Object[][] testData() {
-    return new Object[][] {{"A", "A"}, {"1", "1"}};
+    return new Object[][]{{"A", "A"}, {"1", "1"}};
   }
 }

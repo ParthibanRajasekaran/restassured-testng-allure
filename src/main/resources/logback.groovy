@@ -9,20 +9,20 @@ def LOG_FOLDER = "."
 def PATTERN = "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 
 appender("FILE", RollingFileAppender) {
-  file = "${LOG_FOLDER}/log.txt"
-  encoder(PatternLayoutEncoder) { pattern =  "${PATTERN }"}
-  rollingPolicy(TimeBasedRollingPolicy) {
-    fileNamePattern = "${LOG_FOLDER}/archived/log.%d{yyyy-MM-dd}.%i.txt.zip"
-    timeBasedFileNamingAndTriggeringPolicy(SizeAndTimeBasedFNATP) { maxFileSize = "10MB" }
-    maxHistory = 90
-    cleanHistoryOnStart = true
-  }
+    file = "${LOG_FOLDER}/log.txt"
+    encoder(PatternLayoutEncoder) { pattern = "${PATTERN}" }
+    rollingPolicy(TimeBasedRollingPolicy) {
+        fileNamePattern = "${LOG_FOLDER}/archived/log.%d{yyyy-MM-dd}.%i.txt.zip"
+        timeBasedFileNamingAndTriggeringPolicy(SizeAndTimeBasedFNATP) { maxFileSize = "10MB" }
+        maxHistory = 90
+        cleanHistoryOnStart = true
+    }
 }
 
 appender("STDOUT", ConsoleAppender) {
-  encoder(PatternLayoutEncoder) {
-     pattern = "${PATTERN }" 
-  }
+    encoder(PatternLayoutEncoder) {
+        pattern = "${PATTERN}"
+    }
 }
 
 root(INFO, ["FILE", "STDOUT"])

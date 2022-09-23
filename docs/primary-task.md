@@ -1,12 +1,13 @@
-
 ### Primary Task
 
-1. Provide the base uri (Uniform Resource Identifier) via environment_config file within resources/config <br />
+1. Provide the base uri (Uniform Resource Identifier) via environment_config file within
+   resources/config <br />
    ![](env_config.png)
 2. Provide the resource in the resource class <br />
    ![](resources.png)
 3. Provide request body (Payload) as a string <br />
-   (comment out :  //String requestBody = SamplePayload.buildCustomerCreationPayload(firstname, lastname);
+   (comment out :  //String requestBody = SamplePayload.buildCustomerCreationPayload(firstname,
+   lastname);
    _Example_:
    ```String requestBody = " {   "name": "Wildberries",   "price": 4.99,   "category_url": "/shop/categories/Fruits",   "vendor_url": "/shop/vendors/672" } "``` <br />
    ![](request_body.png)

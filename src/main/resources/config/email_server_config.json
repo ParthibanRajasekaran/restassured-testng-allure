@@ -1,10 +1,10 @@
 {
-  "mail_imaps_host" : "imap-mail.outlook.com",
-  "mail_imaps_socketFactory_port" : 993,
-  "mail_imaps_socketFactory_class" : "javax.net.ssl.SSLSocketFactory",
-  "mail_imaps_socketFactory_fallback" : false,
-  "mail_imaps_port" : 993,
-  "mail_store_protocol" : "imaps",
-  "email_username":"",
-  "email_password":""
+  "mail_imaps_host": "imap-mail.outlook.com",
+  "mail_imaps_socketFactory_port": 993,
+  "mail_imaps_socketFactory_class": "javax.net.ssl.SSLSocketFactory",
+  "mail_imaps_socketFactory_fallback": false,
+  "mail_imaps_port": 993,
+  "mail_store_protocol": "imaps",
+  "email_username": "",
+  "email_password": ""
 }

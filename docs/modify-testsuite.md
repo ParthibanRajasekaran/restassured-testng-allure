@@ -4,7 +4,9 @@
 - Add / remove the new test classes containing tests
 
 ### Add / Remove test suites
-- Create a `<test suite name>`.xml within **src/test/java/testsuites** and specify the same in the maven goal
+
+- Create a `<test suite name>`.xml within **src/test/java/testsuites** and specify the same in the
+  maven goal
 
 <p align="center">
     <a align="middle" href="https://github.com/ParthibanRajasekaran/restassured-gherkin-testng-allure/blob/main/README.md">Take me back

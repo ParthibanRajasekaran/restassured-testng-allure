@@ -8,7 +8,9 @@ import io.restassured.response.Response;
 import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 
-/** Adds content to allure reporting. */
+/**
+ * Adds content to allure reporting.
+ */
 public class Logger {
 
   static final org.apache.logging.log4j.Logger log = LogManager.getLogger(Logger.class);

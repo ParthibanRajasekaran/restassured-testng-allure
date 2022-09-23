@@ -7,7 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.testng.ITestResult;
 import org.testng.util.RetryAnalyzerCount;
 
-/** Created by Parthiban. */
+/**
+ * Created by Parthiban.
+ */
 @Slf4j
 public class Retry extends RetryAnalyzerCount {
 
