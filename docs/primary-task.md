@@ -25,7 +25,7 @@
     </a>
 </p>
 <p align="right">
-    <a align="right" href="https://github.com/ParthibanRajasekaran/restassured-gherkin-testng-allure/blob/be2b0f9474304532da05b7ef881a0482fe6f2477/docs/secondary-task.md">Take me to Secondary Task
+    <a align="right" href="https://github.com/ParthibanRajasekaran/restassured-gherkin-testng-allure/blob/main/docs/secondary-task.md">Take me to Secondary Task
       <img align="right" alt="take me to secondary task" width="45px" src="https://thumbnails.yayimages.com/8/4c9/84c9312.jpg" />
     </a>
 </p>
