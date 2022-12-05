@@ -26,6 +26,6 @@ appender("STDOUT", ConsoleAppender) {
 }
 
 root(INFO, ["FILE", "STDOUT"])
-logger("com.diconium", DEBUG, ["FILE", "STDOUT"], true)
+logger(DEBUG, ["FILE", "STDOUT"], true)
 
 
