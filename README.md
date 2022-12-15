@@ -21,7 +21,7 @@
 <img style="vertical-align:bottom" alt="Java" width="35px" src="https://cdn-icons-png.flaticon.com/512/226/226777.png" /> 
 </td>
 <td>
-Open JDK 11 or higher
+Open JDK 17 or higher
 </td>
 </tr>
 <tr>
