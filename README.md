@@ -58,8 +58,8 @@ Community edition
 ### Getting Started: ⚡
 
 - Clone the project <br />
-  ```git clone https://github.com/ParthibanRajasekaran/restassured-gherkin-testng-allure.git```
-- Launch and open the project 'restassured-gherkin-testng-allure' in IntelliJ editor
+  ```git clone https://github.com/ParthibanRajasekaran/restassured-testng-allure.git```
+- Launch and open the project 'restassured-testng-allure' in IntelliJ editor
 
 <br />
 
