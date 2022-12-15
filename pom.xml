@@ -1,7 +1,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <artifactId>restassured-gherkin-testng-allure</artifactId>
+  <artifactId>restassured-testng-allure</artifactId>
   <build>
     <plugins>
       <plugin>
@@ -87,27 +87,6 @@
       <scope>test</scope>
       <type>maven-plugin</type>
       <version>4.0.0-M3</version>
-      <!--            <exclusions>-->
-      <!--                <exclusion>-->
-      <!--                    &lt;!&ndash;  exclude because it introduces a transient dependency upon log4j 1.12.2 &ndash;&gt;-->
-      <!--                    <groupId>commons-logging</groupId>-->
-      <!--                    <artifactId>commons-logging</artifactId>-->
-      <!--                </exclusion>-->
-      <!--                <exclusion>-->
-      <!--                    &lt;!&ndash; exclude because doxia has a direct dependency on a newer version and-->
-      <!--                    otherwise whitesource gets upset &ndash;&gt;-->
-      <!--                    <groupId>commons-collections</groupId>-->
-      <!--                    <artifactId>commons-collections</artifactId>-->
-      <!--                </exclusion>-->
-      <!--                <exclusion>-->
-      <!--                    <groupId>org.codehaus.plexus</groupId>-->
-      <!--                    <artifactId>plexus-utils</artifactId>-->
-      <!--                </exclusion>-->
-      <!--                <exclusion>-->
-      <!--                    <groupId>org.apache.httpcomponents</groupId>-->
-      <!--                    <artifactId>httpclient</artifactId>-->
-      <!--                </exclusion>-->
-      <!--            </exclusions>-->
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
@@ -135,20 +114,20 @@
     <dependency>
       <artifactId>jackson-dataformat-yaml</artifactId>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
-      <version>2.13.4</version>
+      <version>2.14.0</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
     <dependency>
       <artifactId>jackson-databind</artifactId>
       <groupId>com.fasterxml.jackson.core</groupId>
-      <version>2.13.4</version>
+      <version>2.14.0</version>
     </dependency>
 
     <dependency>
       <artifactId>jackson-core</artifactId>
       <groupId>com.fasterxml.jackson.core</groupId>
-      <version>2.13.4</version>
+      <version>2.14.0</version>
     </dependency>
 
     <dependency>
@@ -167,7 +146,7 @@
     <dependency>
       <artifactId>json</artifactId>
       <groupId>org.json</groupId>
-      <version>20220320</version>
+      <version>20220924</version>
     </dependency>
 
     <dependency>
@@ -199,7 +178,7 @@
       <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
       <artifactId>tika-core</artifactId>
       <groupId>org.apache.tika</groupId>
-      <version>2.3.0</version>
+      <version>2.6.0</version>
     </dependency>
 
     <dependency>
@@ -214,7 +193,7 @@
       <!-- Override the version from testng and jason-dataformat-yaml -->
       <artifactId>snakeyaml</artifactId>
       <groupId>org.yaml</groupId>
-      <version>1.32</version>
+      <version>1.33</version>
     </dependency>
 
     <dependency>
@@ -244,53 +223,43 @@
       <version>${allure.version}</version>
     </dependency>
 
-
     <dependency>
       <artifactId>rest-assured</artifactId>
       <groupId>io.rest-assured</groupId>
       <version>${rest.assured.version}</version>
-      <!--            <exclusions>-->
-      <!--                <exclusion>-->
-      <!--                    &lt;!&ndash;-->
-      <!--                     This version is quite old-->
-      <!--                     if required create a dependency to the new version &ndash;&gt;-->
-      <!--                    <groupId>org.apache.httpcomponents</groupId>-->
-      <!--                    <artifactId>httpclient</artifactId>-->
-      <!--                </exclusion>-->
-      <!--            </exclusions>-->
-    </dependency>
+     </dependency>
     <dependency>
       <artifactId>gson</artifactId>
       <groupId>com.google.code.gson</groupId>
-      <version>2.9.0</version>
+      <version>2.10</version>
     </dependency>
 
     <dependency>
       <artifactId>slf4j-api</artifactId>
       <groupId>org.slf4j</groupId>
-      <version>2.0.1</version>
+      <version>2.0.5</version>
     </dependency>
     <dependency>
       <artifactId>slf4j-simple</artifactId>
       <groupId>org.slf4j</groupId>
       <scope>test</scope>
-      <version>2.0.0</version>
+      <version>2.0.5</version>
     </dependency>
 
   </dependencies>
   <groupId>com.project.template</groupId>
   <modelVersion>4.0.0</modelVersion>
-  <name>restassured-gherkin-testng-allure</name>
+  <name>restassured-testng-allure</name>
   <packaging>jar</packaging>
 
   <properties>
-    <allure.version>2.19.0</allure.version>
+    <allure.version>2.20.0</allure.version>
     <aspectj.version>1.9.9.1</aspectj.version>
     <envConfig/>
     <jacoco.version>0.8.8</jacoco.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <property name="target.dir" value="${base.dir}/target"/>
-    <rest.assured.version>5.2.0</rest.assured.version>
+    <rest.assured.version>5.3.0</rest.assured.version>
     <suiteFile/>
   </properties>
 
