@@ -1,8 +1,8 @@
 ### Hi there, I'm Parthiban Rajasekaran 👋
 
   <p align="left">
-    <a href="https://github.com/ParthibanRajasekaran/restassured-gherkin-testng-allure/actions">
-      <img alt="Tests Passing" src="https://github.com/ParthibanRajasekaran/restassured-testng-allure/workflows/backend-tests/badge.svg" />
+    <a href="https://github.com/ParthibanRajasekaran/restassured-testng-allure/actions">
+      <img alt="Tests Status" src="https://github.com/ParthibanRajasekaran/restassured-testng-allure/workflows/backend-tests/badge.svg" />
     </a>
     <br />
   </p>
