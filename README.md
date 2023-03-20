@@ -2,7 +2,7 @@
 
   <p align="left">
     <a href="https://github.com/ParthibanRajasekaran/restassured-gherkin-testng-allure/actions">
-      <img alt="Tests Passing" src="https://github.com/ParthibanRajasekaran/restassured-gherkin-testng-allure/workflows/backend-tests/badge.svg" />
+      <img alt="Tests Passing" src="https://github.com/ParthibanRajasekaran/restassured-testng-allure/workflows/backend-tests/badge.svg" />
     </a>
     <br />
   </p>
