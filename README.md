@@ -1,11 +1,7 @@
 ### Hi there, I'm Parthiban Rajasekaran 👋
 
-  <p align="left">
-    <a href="https://github.com/ParthibanRajasekaran/restassured-testng-allure/actions">
-      <img alt="Tests Status" src="https://github.com/ParthibanRajasekaran/restassured-testng-allure/workflows/backend-tests/badge.svg" />
-    </a>
-    <br />
-  </p>
+![Test Status](https://github.com/ParthibanRajasekaran/restassured-testng-allure/actions/workflows/backend-tests.yml/badge.svg)
+
 
 ### Connect with me
 
