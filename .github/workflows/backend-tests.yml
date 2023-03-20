@@ -28,7 +28,7 @@ jobs:
         run: mvn -B clean test site -DsuiteFile=api_regression.xml --settings settings.xml
 
       - name: Get Allure history
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         if: always()
         continue-on-error: true
         with:
