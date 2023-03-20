@@ -1,0 +1,14 @@
+{
+  "default": {
+    "sample": "This is default env test data",
+    "host_api": "https://api.predic8.de:443"
+  },
+  "int": {
+    "protocol": "https",
+    "host_api": "https://api.predic8.de:443"
+  },
+  "test": {
+    "protocol": "https",
+    "host_api": "https://api.predic8.de:443"
+  }
+}
