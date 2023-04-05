@@ -133,6 +133,47 @@ public class AppTest {
         }
     }
 
+    @Test(priority = 6)
+    public void testGetLarsAccount() {
+        baseURI = "http://44.202.3.35";
+        port = 6000;
+
+        larsUid = given()
+                .header("Authorization", larsToken)
+                .when()
+                .get("/account")
+                .then()
+                .statusCode(200)
+                .extract()
+                .response()
+                .getBody()
+                .jsonPath()
+                .getString("userId");
+
+        System.out.println(larsUid);
+    }
+
+    @Test(priority = 7)
+    public void testGetLarsTransactions() {
+        baseURI = "http://44.202.3.35";
+        port = 6000;
+
+        String resp = given()
+                .header("Authorization", larsToken)
+                .queryParam("userId", larsUid)
+                .queryParam("limit", 5)
+                .when()
+                .get("/transactions")
+                .then()
+                .statusCode(200)
+                .extract()
+                .response()
+                .getBody()
+                .asString();
+
+        System.out.println(resp);
+    }
+
 }
 
 
