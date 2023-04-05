@@ -6,7 +6,8 @@
   <test name="SHOP - Customer Flow" thread-count="2">
     <classes>
 
-      <class name="com.template.project.api.tests.featureflow.SampleTest"/>
+<!--      <class name="com.template.project.api.tests.featureflow.SampleTest"/>-->
+      <class name="com.pynt.rest.AppTest"/>
 
     </classes>
   </test>
