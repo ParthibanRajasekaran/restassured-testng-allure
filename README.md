@@ -57,9 +57,7 @@ Community edition
   ```git clone https://github.com/ParthibanRajasekaran/restassured-testng-allure.git```
 - Launch and open the project 'restassured-testng-allure' in IntelliJ editor
 - To execute Pynt along with test suite
-  ```pynt command --cmd "mvn -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=6666 test -DsuiteFile=api_regression.xml"
-```
-
+  ```pynt command --cmd "mvn -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=6666 test -DsuiteFile=api_regression.xml"```
 <br />
 
 ---
