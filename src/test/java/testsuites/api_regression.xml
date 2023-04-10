@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="API integration suite" parallel="methods" thread-count="2">
+<suite name="API integration suite">
 <!--  <listeners>-->
 <!--    <listener class-name="com.template.project.common.RestAssuredListener"/>-->
 <!--  </listeners>-->
-  <test name="SHOP - Customer Flow" thread-count="2">
+  <test name="SHOP - Customer Flow">
     <classes>
 
 <!--      <class name="com.template.project.api.tests.featureflow.SampleTest"/>-->
