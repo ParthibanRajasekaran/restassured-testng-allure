@@ -11,6 +11,8 @@
 
 ### Prerequisites
 
+Please refer to : https://medium.com/@rajasekaran.parthiban7/pynting-out-the-vulnerabilities-enhancing-rest-assured-testing-for-maximizing-api-security-e23361a85050
+
 <table> 
 <tr>
 <td>
