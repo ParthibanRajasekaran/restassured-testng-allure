@@ -56,6 +56,8 @@ Community edition
 - Clone the project <br />
   ```git clone https://github.com/ParthibanRajasekaran/restassured-testng-allure.git```
 - Launch and open the project 'restassured-testng-allure' in IntelliJ editor
+- For executing tests via Maven run <br />
+  ```mvn clean test -DsuiteFile=api_regression.xml```
 
 <br />
 
