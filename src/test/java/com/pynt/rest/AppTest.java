@@ -1,10 +1,10 @@
 package com.pynt.rest;
 
-import org.testng.annotations.Test;
-import org.json.JSONObject;
 import org.json.JSONException;
+import org.json.JSONObject;
+import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.* ;
+import static io.restassured.RestAssured.*;
 
 public class AppTest {
 
@@ -42,13 +42,13 @@ public class AppTest {
         }
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, dependsOnMethods = {"step1_testJamesCanLogin"})
     public void step2_testGetJamesAccount() {
         baseURI = "http://44.202.3.35";
         port = 6000;
-        System.out.println("Will use james token " + jamesToken);
+        System.out.println("Will use james token " + "Bearer " + jamesToken);
         jamesUid = given()
-                .header("Authorization", jamesToken)
+                .header("Authorization", "Bearer " + jamesToken)
                 .when()
                 .get("/account")
                 .then()
@@ -62,13 +62,13 @@ public class AppTest {
         System.out.println(jamesUid);
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, dependsOnMethods = {"step2_testGetJamesAccount"})
     public void step3_testGetJamesTransactions() {
         baseURI = "http://44.202.3.35";
         port = 6000;
 
         String resp = given()
-                .header("Authorization", jamesToken)
+                .header("Authorization", "Bearer " + jamesToken)
                 .queryParam("userId", jamesUid)
                 .queryParam("limit", 5)
                 .when()
@@ -83,13 +83,13 @@ public class AppTest {
         System.out.println(resp);
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, dependsOnMethods = {"step3_testGetJamesTransactions"})
     public void step4_testGetMoreOfJamesTransactions() {
         baseURI = "http://44.202.3.35";
         port = 6000;
 
         String resp = given()
-                .header("Authorization", jamesToken)
+                .header("Authorization", "Bearer " + jamesToken)
                 .queryParam("userId", jamesUid)
                 .queryParam("limit", 10)
                 .when()
@@ -104,7 +104,7 @@ public class AppTest {
         System.out.println(resp);
     }
 
-    @Test(priority = 5)
+    @Test(priority = 5, dependsOnMethods = {"step4_testGetMoreOfJamesTransactions"})
     public void step5_testLarsCanLogin() {
         baseURI = "http://44.202.3.35";
         port = 6000;
@@ -133,13 +133,13 @@ public class AppTest {
         }
     }
 
-    @Test(priority = 6)
+    @Test(priority = 6, dependsOnMethods = {"step5_testLarsCanLogin"})
     public void testGetLarsAccount() {
         baseURI = "http://44.202.3.35";
         port = 6000;
 
         larsUid = given()
-                .header("Authorization", larsToken)
+                .header("Authorization", "Bearer " + larsToken)
                 .when()
                 .get("/account")
                 .then()
@@ -153,13 +153,13 @@ public class AppTest {
         System.out.println(larsUid);
     }
 
-    @Test(priority = 7)
+    @Test(priority = 7, dependsOnMethods = {"testGetLarsAccount"})
     public void testGetLarsTransactions() {
         baseURI = "http://44.202.3.35";
         port = 6000;
 
         String resp = given()
-                .header("Authorization", larsToken)
+                .header("Authorization", "Bearer " + larsToken)
                 .queryParam("userId", larsUid)
                 .queryParam("limit", 5)
                 .when()
