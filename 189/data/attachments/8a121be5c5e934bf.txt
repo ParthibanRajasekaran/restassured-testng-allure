@@ -1,1 +1,0 @@
-{"firstname":"customerFirstName","lastname":"customerLastName","orders_url":"/shop/customers/348/orders/"}
