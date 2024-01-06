@@ -3,10 +3,10 @@
 <!--  <listeners>-->
 <!--    <listener class-name="com.template.project.common.RestAssuredListener"/>-->
 <!--  </listeners>-->
-  <test name="SHOP - Customer Flow" thread-count="2">
+  <test name="SHOP - Product Flow" thread-count="2">
     <classes>
 
-      <class name="com.template.project.api.tests.featureflow.SampleTest"/>
+      <class name="com.template.project.api.tests.featureflow.ProductTest"/>
 
     </classes>
   </test>
