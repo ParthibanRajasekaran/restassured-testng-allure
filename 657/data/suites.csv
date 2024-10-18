@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Oct 18 04:40:33 GMT 2024","Fri Oct 18 04:40:37 GMT 2024","4142","API integration suite","SHOP - Product Flow","com.template.project.api.tests.featureflow.ProductTest","com.template.project.api.tests.featureflow.ProductTest","testProductCreation","testProductCreation","Verify Product creation"
