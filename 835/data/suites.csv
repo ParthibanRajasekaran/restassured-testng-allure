@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Verify Product creation","6372","testProductCreation","API integration suite","Mon Apr 14 04:40:57 GMT 2025","passed","Mon Apr 14 04:41:03 GMT 2025","com.template.project.api.tests.featureflow.ProductTest","SHOP - Product Flow","com.template.project.api.tests.featureflow.ProductTest","testProductCreation"
