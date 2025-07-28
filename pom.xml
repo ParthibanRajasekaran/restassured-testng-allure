@@ -51,6 +51,9 @@
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-maven</artifactId>
         <version>2.11.2</version>
+        <configuration>
+          <resultsDirectory>allure-results</resultsDirectory>
+        </configuration>
         <executions>
           <execution>
             <phase>post-integration-test</phase>
